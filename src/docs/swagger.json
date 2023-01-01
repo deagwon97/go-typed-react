@@ -1,0 +1,10 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "go typed react template",
+        "title": "RBAC GO API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "paths": {}
+}

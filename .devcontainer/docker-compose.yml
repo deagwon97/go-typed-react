@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  go-typed-react:
+    build:
+      context: ../
+      dockerfile: ./Dockerfile
+      target: builder
+    volumes:
+      - ../:/root/workdir
+    env_file:
+      - ../.env
+    stdin_open: true
+    tty: true

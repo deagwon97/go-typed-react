@@ -1,0 +1,39 @@
+{
+  "name": "go-typed-react",
+  "dockerComposeFile": ["./docker-compose.yml"],
+  "service": "go-typed-react",
+  "shutdownAction": "stopCompose",
+  "extensions": [
+    "golang.go",
+    "dunstontc.vscode-go-syntax",
+    "skip1.go-swagger",
+    "jinliming2.vscode-go-template",
+    "rvest.vs-code-prettier-eslint",
+    "esbenp.prettier-vscode"
+  ],
+  "settings": {
+    "editor.defaultFormatter": "golang.go",
+    "swagger.tpl": "// @Summary {desc} \n// @Tags {tag_name} \n// @Accept json \n// @Produce json \n// @Param page query {type}  {require_bool}  \"{desc string}\" \n// @Param data body {type} {require_bool} \"{desc string}\" \n// @Success 200 {object} {type} \n// @Router /path/path [post]",
+    "editor.minimap.enabled": false,
+    "gopls": {
+      "experimentalWorkspaceModule": true
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true
+  },
+  "workspaceFolder": "/root/workdir"
+}
