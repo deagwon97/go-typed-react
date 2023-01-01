@@ -1,7 +1,7 @@
 # Go gin & Typescript React project template
 
 Go의 Gin을 이용한 Rest-full Api 템플릿입니다. 
-* models - repositorys - services - controllers 구조
+* models - repository - service - controller 구조
 * 각 클래스의 내부 의존 관계
   * struct <- method <- interface <- constructor
 * Singleton 디자인의 GoORM 객체
